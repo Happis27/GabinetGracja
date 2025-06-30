@@ -1,0 +1,16 @@
+<header class="header" [class.scrolled]="isScrolled && !sidenavMenu">
+    <div class="header-container">
+        <div class="logo-container">
+            <button class="d-mobile d-flex" matIconButton (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button>
+            <a href="https://www.gabinetgracja.com.pl/" target="_blank" rel="noopener">
+                <img src="assets/logo.png" alt="Gabinet Kosmetyczny Gracja LOGO" class="logo-image" />
+            </a>
+        </div>
+        <nav class="header-menu d-desktop">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="menu-link"
+                >Strona główna</a
+            >
+            <a routerLink="/kontakt" routerLinkActive="active" class="menu-link">Kontakt</a>
+        </nav>
+    </div>
+</header>

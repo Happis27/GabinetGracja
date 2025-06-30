@@ -1,0 +1,13 @@
+# Add files here to ignore them from prettier formatting
+/dist
+/coverage
+/node_modules
+/.angular
+/.vscode
+.gitlab-ci.yml
+/libs/openapi
+
+.angular
+
+/.nx/cache
+

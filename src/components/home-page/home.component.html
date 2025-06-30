@@ -1,0 +1,137 @@
+<img class="hero-image" [src]="'assets/background.jpg'" alt="Gabinet Kosmetyczny Gracja Background" />
+<div class="info-container">
+    <div class="info-content">
+        <div class="description-container">
+            <h1>O Nas</h1>
+            <p class="description">
+                Nasza szeroka oferta zabiegowa jest do Państwa dyspozycji. Nasz gabinet powstał z pasji w 2003r. i
+                prowadzony jest z satysfakcją. Nieustannie obserwujemy nowości rynku kosmetycznego, uczestniczymy w
+                wielu szkoleniach i kongresach. Staramy się poszerzać naszą ofertę o najnowsze usługi, które
+                charakteryzuje wysoka skuteczność. Profesjonalizm i miła obsługa sprawi, że czas spędzany u nas to czas
+                relaksu i prawdziwej przyjemności.
+            </p>
+            <button [routerLink]="['kontakt']" matRipple class="app-button">Kontakt</button>
+        </div>
+        <div class="gallery">
+            <gallery [items]="images" [autoHeight]="true" [autoplay]="true" [bullets]="true"></gallery>
+        </div>
+    </div>
+</div>
+<div class="our-team">
+    <h3>GABINET KOSMETYCZNY "GRACJA"</h3>
+    <div class="divider"></div>
+    <h1>NASZ ZESPÓŁ</h1>
+    <div class="team-container">
+        <div class="profile-member-card">
+            <img src="assets/team/anna.jpg" alt="Anna Wąsik" />
+            <h3>ANNA WĄSIK</h3>
+            <p>
+                Założycielka Gabinetu Kosmetycznego „Gracja”. Dyplomowana kosmetyczka z wieloletnim doświadczeniem.
+                Umiejętności oparte o szereg szkoleń w renomowanych dziedzinach kosmetologii i podologii.
+            </p>
+        </div>
+        <div class="profile-member-card">
+            <img src="assets/team/aleksandra.jpg" alt="Aleksandra Krzyś" />
+            <h3>ALEKSANDRA KRZYŚ</h3>
+            <p>
+                Absolwentka Uniwersytetu Medycznego w Łodzi. Magister kosmetologii. Dyplomowana wizażystka i
+                charakteryzator. Z zamiłowania zajmuje się stylizacją brwi, paznokci i makijażem. Z Gabinetem Gracja
+                związana od 2012r.
+            </p>
+        </div>
+    </div>
+    <div class="working-with">
+        <h3>Współpracujemy z</h3>
+        <div class="divider"></div>
+        <div class="image-container">
+            <img *ngFor="let image of images2" [src]="image" />
+        </div>
+    </div>
+</div>
+<div class="info-container">
+    <div class="info-content">
+        <div class="description-container">
+            <h1>Oferta usługowa</h1>
+            <div class="offer-list">
+                <div class="offer-list-column">
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>PIELĘGNACJA</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>KOSMETYKA Z APARATURĄ</div>
+                    <div class="description-element-link">
+                        <mat-icon>chevron_right</mat-icon>MAKIJAŻ OKOLICZNOSCIOWY
+                    </div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>MAKIJAZ PERMANENTNY</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>KOSMETYKA DŁONI</div>
+                </div>
+                <div class="offer-list-column">
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>STYLIZACJA PAZNOKCI</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>PODOLOGIA</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>DEPILACJA</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>LASEROTERAPIA</div>
+                    <div class="description-element-link"><mat-icon>chevron_right</mat-icon>BODY PIERCING</div>
+                </div>
+            </div>
+            <button [routerLink]="['kontakt']" matRipple class="app-button">Pełna oferta</button>
+        </div>
+        <div class="gallery">
+            <gallery [items]="images3" [autoHeight]="true" [autoplay]="true" [bullets]="true"></gallery>
+        </div>
+    </div>
+</div>
+<div class="bony-and-sales">
+    <div class="bony-and-sales-content">
+        <div class="bony" matRipple>
+            <img class="bony-and-sales-icon" [src]="'assets/bony.svg'" alt="Bony Podarunkowe" />
+            <div class="bony-content">
+                <h3>BONY PODARUNKOWE</h3>
+                <p>Dobranie idealnego prezentu jest nie lada wyzwaniem</p>
+            </div>
+        </div>
+        <div class="sales" matRipple>
+            <img class="bony-and-sales-icon" [src]="'assets/sales.svg'" alt="Sprzedaż detaliczna" />
+            <div class="sales-content">
+                <h3>SPRZEDAŻ DETALICZNA</h3>
+                <p>Prowadzimy sprzedaż profesjonalnych kosmetyków</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact-section-container">
+    <div class="contact-container">
+        <div class="contact">
+            <div class="contact-content">
+                <div class="contact-section">
+                    <h3 class="contact-title">Adres</h3>
+                    <address>
+                        <p>Al. Jana Pawła II 13a/2</p>
+                        <p>37-450 Stalowa Wola</p>
+                    </address>
+                </div>
+                <div class="contact-section">
+                    <h3 class="contact-title">Kontakt</h3>
+                    <p>15 842 94 19</p>
+                    <p>
+                        <a href="mailto:info@gabinetgracja.com.pl" class="contact-link">
+                            {{ 'info@gabinetgracja.com.pl' }}
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-section">
+                    <h3 class="contact-title">Godziny otwarcia</h3>
+                    <p>Pon. - Pt. 10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <iframe
+            title="Gabinet Gracja Lokalizacja"
+            width="100%"
+            height="450"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Aleje+Jana+Paw%C5%82a+II+13A%2F2%2C+37-450+Stalowa+Wola&output=embed">
+        </iframe>
+    </div>
+    <a class="ms-auto me-auto" href="mailto:info@gabinetgracja.com.pl" class="app-button">Wyślij wiadomość</a>
+</div>
