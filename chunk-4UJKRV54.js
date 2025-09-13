@@ -1,0 +1,1 @@
+import{Bb as o,Cb as r,Ub as n,eb as a}from"./chunk-7OQCTBWR.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-carboxytherapy"]],decls:2,vars:0,template:function(e,s){e&1&&(o(0,"p"),n(1,"carboxytherapy works!"),r())},encapsulation:2})};export{p as Carboxytherapy};

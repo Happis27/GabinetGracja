@@ -1,0 +1,1 @@
+import{Bb as r,Cb as s,Ub as n,eb as a}from"./chunk-7OQCTBWR.js";var o=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-laser-therapy"]],decls:2,vars:0,template:function(e,i){e&1&&(r(0,"p"),n(1,"laser-therapy works!"),s())},encapsulation:2})};export{o as LaserTherapy};

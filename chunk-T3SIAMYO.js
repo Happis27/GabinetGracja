@@ -1,0 +1,1 @@
+import{Bb as t,Cb as o,Ub as c,eb as n}from"./chunk-7OQCTBWR.js";var r=class i{static \u0275fac=function(e){return new(e||i)};static \u0275cmp=n({type:i,selectors:[["app-body-piercing"]],decls:2,vars:0,template:function(e,s){e&1&&(t(0,"p"),c(1,"body-piercing works!"),o())},encapsulation:2})};export{r as BodyPiercing};

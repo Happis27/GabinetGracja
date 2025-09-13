@@ -1,0 +1,1 @@
+import{Bb as i,Cb as l,Ub as a,eb as n}from"./chunk-7OQCTBWR.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-nail-styling"]],decls:2,vars:0,template:function(e,c){e&1&&(i(0,"p"),a(1,"nail-styling works!"),l())},encapsulation:2})};export{s as NailStyling};

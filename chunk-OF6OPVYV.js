@@ -1,0 +1,1 @@
+import{Bb as a,Cb as p,Ub as m,eb as t}from"./chunk-7OQCTBWR.js";var o=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-permanent-makeup"]],decls:2,vars:0,template:function(e,s){e&1&&(a(0,"p"),m(1,"permanent-makeup works!"),p())},encapsulation:2})};export{o as PermanentMakeup};

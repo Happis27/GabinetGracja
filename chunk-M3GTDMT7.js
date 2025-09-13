@@ -1,0 +1,1 @@
+import{Bb as n,Cb as t,Ub as c,eb as a}from"./chunk-7OQCTBWR.js";var s=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=a({type:o,selectors:[["app-occasion-makeup"]],decls:2,vars:0,template:function(e,p){e&1&&(n(0,"p"),c(1,"occasion-makeup works!"),t())},encapsulation:2})};export{s as OccasionMakeup};
