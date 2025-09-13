@@ -1,0 +1,95 @@
+<div class="our-team">
+    <h3>GABINET KOSMETYCZNY "GRACJA"</h3>
+    <div class="divider"></div>
+    <h1>NASZ ZESPÓŁ</h1>
+    <div class="team-container">
+        <div class="profile-member-card">
+            <img src="assets/team/anna.jpg" alt="Anna Wąsik" />
+            <h3>ANNA WĄSIK</h3>
+            <p>
+                Założycielka Gabinetu Kosmetycznego „Gracja”. Dyplomowana kosmetyczka z wieloletnim doświadczeniem.
+                Umiejętności oparte o szereg szkoleń w renomowanych dziedzinach kosmetologii i podologii.
+            </p>
+        </div>
+        <div class="profile-member-card">
+            <img src="assets/team/aleksandra.jpg" alt="Aleksandra Krzyś" />
+            <h3>ALEKSANDRA KRZYŚ</h3>
+            <p>
+                Absolwentka Uniwersytetu Medycznego w Łodzi. Magister kosmetologii. Dyplomowana wizażystka i
+                charakteryzator. Z zamiłowania zajmuje się stylizacją brwi, paznokci i makijażem. Z Gabinetem Gracja
+                związana od 2012r.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="info-container">
+    <div class="info-content">
+        <div class="description-container">
+            <h1>Gabinet "Gracja"</h1>
+            <p class="description">
+                Kosmetyka to nie tylko nasza praca – przede wszystkim zamiłowanie i pasja. Wieloletnia praktyka i
+                doświadczenie, ciągła edukacja i rozwój zawsze pomaga sprostać państwa wymaganiom aby osiągnąć
+                zadowolenie i satysfakcję.
+                <br /><br />
+                Zapewniając o profesjonalnym i pełnym troski podejściu do klientów proponujemy pełen wachlarz usług z
+                użyciem kosmetyków renomowanych marek.
+                <br /><br />
+                Serdecznie zapraszamy do naszego gabinetu przy al. Jana Pawła II 13a/2 – Stalowa Wola.
+                <br /><br />
+                Profesjonalizm i miła obsługa sprawi, że czas spędzany u nas to czas relaksu i prawdziwej przyjemności.
+            </p>
+            <div class="action-container">
+                <button [routerLink]="'/galeria'" matRipple class="app-button">Galeria</button>
+                <button [routerLink]="'/kontakt'" matRipple class="app-button">Kontakt</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <gallery [items]="images" [id]="'1'" [autoHeight]="true" [autoplay]="true" [bullets]="true"></gallery>
+        </div>
+    </div>
+</div>
+<div class="gallery">
+    <div class="working-with">
+        <h3>Certyfikaty</h3>
+        <div class="divider"></div>
+        <div class="image-container">
+            <gallery
+                class="w-100"
+                [items]="images5"
+                [id]="'2'"
+                [autoplay]="true"
+                [bullets]="true"
+                [itemAutosize]="true"
+                [loadingAttr]="'eager'"
+                [loadingStrategy]="'preload'"
+                [loop]="true">
+            </gallery>
+        </div>
+    </div>
+    <div class="working-with">
+        <h3>Certyfikaty</h3>
+        <div class="divider"></div>
+        <div class="image-container">
+            <gallery
+                class="w-100"
+                [items]="images6"
+                [id]="'3'"
+                [autoplay]="true"
+                [bullets]="true"
+                [itemAutosize]="true"
+                [loadingAttr]="'eager'"
+                [loadingStrategy]="'preload'"
+                [loop]="true">
+            </gallery>
+        </div>
+    </div>
+    <div class="working-with">
+        <h3>Współpracujemy z</h3>
+        <div class="divider"></div>
+        <div class="image-container">
+            @for (image of images2; track $index) {
+                <img [src]="image" />
+            }
+        </div>
+    </div>
+</div>

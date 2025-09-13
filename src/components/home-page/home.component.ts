@@ -33,6 +33,7 @@ export class HomeComponent {
         '/assets/galeria2/5.jpg',
         '/assets/galeria2/6.jpg',
     ];
+
     public images3: GalleryItem[] = [
         new ImageItem({ src: '/assets/galeria3/1.jpg' }),
         new ImageItem({ src: '/assets/galeria3/2.jpg' }),
