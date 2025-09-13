@@ -10,7 +10,15 @@
                 charakteryzuje wysoka skuteczność. Profesjonalizm i miła obsługa sprawi, że czas spędzany u nas to czas
                 relaksu i prawdziwej przyjemności.
             </p>
-            <button [routerLink]="['kontakt']" matRipple class="app-button">Kontakt</button>
+            <div class="action-container">
+                <a
+                    class="app-button"
+                    matRipple
+                    href="https://www.facebook.com/p/Gracja-Gabinet-Kosmetyczny-100063517722678/">
+                    Galeria
+                </a>
+                <button [routerLink]="'/kontakt'" matRipple class="app-button">Kontakt</button>
+            </div>
         </div>
         <div class="gallery">
             <gallery [items]="images" [id]="'1'" [autoHeight]="true" [autoplay]="true" [bullets]="true"></gallery>
@@ -70,7 +78,7 @@
                     <div class="description-element-link"><mat-icon>chevron_right</mat-icon>BODY PIERCING</div>
                 </div>
             </div>
-            <button [routerLink]="['kontakt']" matRipple class="app-button">Pełna oferta</button>
+            <button [routerLink]="'/oferta'" matRipple class="app-button">Pełna oferta</button>
         </div>
         <div class="gallery">
             <gallery [items]="images3" [id]="'2'" [autoHeight]="true" [autoplay]="true" [bullets]="true"></gallery>

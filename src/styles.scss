@@ -77,6 +77,19 @@ h6 {
     }
 }
 
+a.app-button {
+    &:link,
+    &:visited {
+        color: white;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 .our-team {
     max-width: 1280px;
     margin: 0 auto;
