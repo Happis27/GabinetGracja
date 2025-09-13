@@ -4,7 +4,7 @@
         [autoFocus]="false"
         [mode]="'over'"
         [fixedInViewport]="true"
-        (openedStart)="this.isSidenavOpened = true"
+        (openedStart)="onSidenavOpened(menuContent)"
         (closedStart)="this.isSidenavOpened = false">
         <div class="sidenav-menu">
             <app-header
@@ -14,7 +14,7 @@
                 (sidenavToggleEvent)="sidenav.toggle()">
             </app-header>
             <div class="separator"></div>
-            <div class="menu-content">
+            <div class="menu-content" #menuContent>
                 <div class="menu-container">
                     <a
                         class="menu-button"

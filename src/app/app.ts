@@ -30,4 +30,9 @@ export class App {
         }
         return this.router.url.startsWith('/' + url);
     };
+
+    onSidenavOpened(menuEl: HTMLElement): void {
+        this.isSidenavOpened = true;
+        menuEl.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 }

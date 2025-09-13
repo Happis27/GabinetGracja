@@ -90,95 +90,6 @@ a.app-button {
     }
 }
 
-.our-team {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    background-color: white;
-    text-align: center;
-
-    .divider {
-        width: 100px;
-        height: 1px;
-        background-color: #222;
-    }
-
-    h3 {
-        font-weight: 200;
-        letter-spacing: 1px;
-        font-size: 20px;
-
-        @media (min-width: 1200px) {
-            font-weight: 300;
-            letter-spacing: 2px;
-            font-size: 26px;
-        }
-    }
-
-    h1 {
-        font-weight: 400;
-        letter-spacing: 1px;
-        font-size: 40px;
-
-        @media (min-width: 1200px) {
-            font-weight: 500;
-            letter-spacing: 1px;
-            font-size: 50px;
-        }
-    }
-
-    .team-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-
-        @media (min-width: 1200px) {
-            flex-direction: row;
-        }
-
-        .profile-member-card {
-            width: 400px;
-            padding: 20px 20px 40px;
-            background: linear-gradient(151deg, rgba(255, 255, 255, 1) 0%, rgb(227, 227, 227) 100%);
-            border-radius: 20px;
-            box-shadow: 8px 8px 39px -3px rgba(222, 222, 222, 1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-
-            img {
-                object-fit: cover;
-                display: block;
-                background: #eee;
-                width: 360px;
-                border-radius: 10px;
-                padding-bottom: 20px;
-            }
-
-            h3 {
-                text-align: center;
-                font-weight: 500;
-                font-size: 26px;
-            }
-
-            p {
-                text-align: center;
-                font-weight: 300;
-                font-size: 14px;
-            }
-        }
-    }
-}
-
 .bony-and-sales {
     background-color: rgb(253, 219, 127);
     width: 100&;
@@ -243,8 +154,12 @@ a.app-button {
     }
 
     .bony-and-sales-icon {
-        height: 150px;
+        height: 64px;
         width: auto;
+
+        @media (min-width: 1200px) {
+            height: 150px;
+        }
     }
 
     .bony-content {
@@ -268,5 +183,95 @@ a.app-button {
         font-weight: 600;
         letter-spacing: 1px;
         font-size: 26px;
+    }
+}
+
+.our-team {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+
+    .divider {
+        width: 100px;
+        height: 1px;
+        background-color: #222;
+    }
+
+    h3 {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 20px;
+
+        @media (min-width: 1200px) {
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 26px;
+        }
+    }
+
+    h1 {
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 40px;
+
+        @media (min-width: 1200px) {
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 50px;
+        }
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+
+        .profile-member-card {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px 20px 40px;
+            background: linear-gradient(151deg, rgba(255, 255, 255, 1) 0%, rgb(227, 227, 227) 100%);
+            border-radius: 20px;
+            box-shadow: 8px 8px 39px -3px rgba(222, 222, 222, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                object-fit: cover;
+                display: block;
+                background: #eee;
+                width: 100%;
+                border-radius: 10px;
+                padding-bottom: 20px;
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 26px;
+            }
+
+            p {
+                text-align: center;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
     }
 }
