@@ -178,3 +178,95 @@ a.app-button {
         }
     }
 }
+
+.bony-and-sales {
+    background-color: rgb(253, 219, 127);
+    width: 100&;
+    color: black;
+
+    .bony-and-sales-content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
+    .bony {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: start;
+        gap: 20px;
+        padding: 40px 20px;
+        background-color: rgb(253, 219, 127);
+        width: 100%;
+        justify-content: flex-start;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        @media (min-width: 1200px) {
+            width: 50%;
+            justify-content: flex-end;
+        }
+
+        &:hover {
+            background-color: rgb(255, 206, 71);
+        }
+    }
+
+    .sales {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: end;
+        gap: 20px;
+        padding: 40px 20px;
+        width: 100%;
+        justify-content: flex-start;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        @media (min-width: 1200px) {
+            width: 50%;
+            justify-content: flex-end;
+        }
+        &:hover {
+            background-color: rgb(255, 206, 71);
+        }
+    }
+
+    .bony-and-sales-icon {
+        height: 150px;
+        width: auto;
+    }
+
+    .bony-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sales-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    p {
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 26px;
+    }
+}

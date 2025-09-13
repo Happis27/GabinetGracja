@@ -1,0 +1,44 @@
+<section class="offer-page">
+    <header class="offer-header">
+        <h1>Oferta</h1>
+        <div class="divider"></div>
+    </header>
+
+    <div class="offers-list">
+        @for (item of offers; track item.route) {
+            <article class="offer-card" [style.--icon-url]="'url(' + item.icon + ')'">
+                <img class="offer-icon" [src]="item.icon" />
+                <div class="offer-card__content">
+                    <h3 class="offer-card__title">{{ item.title }}</h3>
+                    <p class="offer-card__desc">{{ item.description }}</p>
+                </div>
+                <a class="offer-card__cta" [routerLink]="item.route">DOWIEDZ SIĘ WIĘCEJ</a>
+            </article>
+        }
+    </div>
+    <p class="offer-card__desc text-center">
+        W salonie prowadzimy bezpłatne porady i konsultacje z zakresu kosmetologii i podologii. Zawsze możesz przyjść i
+        porozmawiać o Swoich problemach a my postaramy się dobrać odpowiednią kurację gabinetową jak również
+        profesjonalną pielęgnację domową która spełni Państwa oczekiwania. Gwarantujemy pełną higienę oraz najwyższą jej
+        staranność podczas wykonywania usług. Narzędzia są sterylizowane na miejscu w medycznym autoklawie. Państwa
+        bezpieczeństwo i zadowolenie jest dla nas sprawą priorytetową i najważniejszą.
+    </p>
+</section>
+<div class="bony-and-sales">
+    <div class="bony-and-sales-content">
+        <div class="bony" matRipple>
+            <img class="bony-and-sales-icon" [src]="'assets/bony.svg'" alt="Bony Podarunkowe" />
+            <div class="bony-content">
+                <h3>BONY PODARUNKOWE</h3>
+                <p>Dobranie idealnego prezentu jest nie lada wyzwaniem</p>
+            </div>
+        </div>
+        <div class="sales" matRipple [routerLink]="'/sprzedaz'">
+            <img class="bony-and-sales-icon" [src]="'assets/sales.svg'" alt="Sprzedaż detaliczna" />
+            <div class="sales-content">
+                <h3>SPRZEDAŻ DETALICZNA</h3>
+                <p>Prowadzimy sprzedaż profesjonalnych kosmetyków</p>
+            </div>
+        </div>
+    </div>
+</div>

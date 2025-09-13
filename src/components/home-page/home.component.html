@@ -1,4 +1,6 @@
-<img class="hero-image" [src]="'assets/background.jpg'" alt="Gabinet Kosmetyczny Gracja Background" />
+<div class="logo-image-container">
+    <img class="hero-image" [src]="'assets/background.jpg'" alt="Gabinet Kosmetyczny Gracja Background" />
+</div>
 <div class="info-container">
     <div class="info-content">
         <div class="description-container">
@@ -94,7 +96,7 @@
                 <p>Dobranie idealnego prezentu jest nie lada wyzwaniem</p>
             </div>
         </div>
-        <div class="sales" matRipple>
+        <div class="sales" matRipple [routerLink]="'/sprzedaz'">
             <img class="bony-and-sales-icon" [src]="'assets/sales.svg'" alt="Sprzedaż detaliczna" />
             <div class="sales-content">
                 <h3>SPRZEDAŻ DETALICZNA</h3>
@@ -115,7 +117,7 @@
                     </address>
                 </div>
                 <div class="contact-section">
-                    <h3 class="contact-title">Kontakt</h3>
+                    <h3 class="contact-title">Telefon</h3>
                     <p>15 842 94 19</p>
                     <p>
                         <a href="mailto:info@gabinetgracja.com.pl" class="contact-link">
