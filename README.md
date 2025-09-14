@@ -4,4 +4,4 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 npm install -g @angular/cli
 ng build --configuration production
-npx angular-cli-ghpages --dir=dist/grabinet-gracja/browser
+npx angular-cli-ghpages --dir=dist/grabinet-gracja/browser --cname=www.gabinetgracja.com.pl

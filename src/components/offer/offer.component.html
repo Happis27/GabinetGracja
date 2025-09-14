@@ -6,7 +6,7 @@
 
     <div class="offers-list">
         @for (item of offers; track item.route) {
-            <article class="offer-card" [style.--icon-url]="'url(' + item.icon + ')'">
+            <article class="offer-card" [style.--icon-url]="'url(' + item.icon + ')'" [routerLink]="item.route">
                 <img class="offer-icon" [src]="item.icon" />
                 <div class="offer-card__content">
                     <h3 class="offer-card__title">{{ item.title }}</h3>

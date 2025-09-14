@@ -1,0 +1,15 @@
+<mat-accordion class="faq-accordion" [multi]="true" [displayMode]="'flat'">
+    @for (item of items; let i = $index; track item.title) {
+        <mat-expansion-panel class="faq-panel" #panel="matExpansionPanel" [disabled]="!item.answer">
+            <mat-expansion-panel-header>
+                <div class="faq-header">
+                    <h5 class="faq-title">{{ item.title }}</h5>
+                </div>
+                @if (i !== 0) {
+                    <div class="separator"></div>
+                }
+            </mat-expansion-panel-header>
+            <div class="faq-answer" [innerHTML]="item.answer"></div>
+        </mat-expansion-panel>
+    }
+</mat-accordion>

@@ -4,6 +4,9 @@
     --color-primary: rgb(212, 175, 55);
     --color-dark: #222;
     --mat-sidenav-content-background-color: white;
+    --mat-expansion-container-shape: 16px;
+    --mat-expansion-header-collapsed-state-height: auto;
+    --mat-expansion-header-expanded-state-height: auto;
 }
 
 body {
@@ -274,4 +277,114 @@ a.app-button {
             }
         }
     }
+}
+
+.sale-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    min-height: calc(100dvh - 180px - 80px);
+
+    @media (min-width: 768px) {
+        min-height: calc(100dvh - 280px - 80px);
+    }
+
+    @media (min-width: 1200px) {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+}
+
+.sale-header {
+    text-align: center;
+
+    .divider {
+        max-width: 200px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-primary);
+        margin: 12px auto 0;
+        border-radius: 2px;
+    }
+}
+
+.sale-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media (min-width: 1200px) {
+        align-items: stretch;
+        gap: 40px;
+    }
+}
+
+.sale-header {
+    text-align: center;
+
+    .divider {
+        max-width: 200px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-primary);
+        margin: 12px auto 0;
+        border-radius: 2px;
+    }
+}
+
+.sale-content {
+    display: flex;
+    flex-direction: column; // image stays under text on all sizes
+    align-items: center;
+    gap: 24px;
+
+    @media (min-width: 1200px) {
+        gap: 40px;
+    }
+}
+
+.sale-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    max-width: 900px;
+
+    @media (min-width: 1200px) {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 22px;
+
+        @media (min-width: 1200px) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.7;
+        font-size: 16px;
+        letter-spacing: 1px;
+
+        @media (min-width: 1200px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.sale-img {
+    border-radius: 16px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    max-width: 900px;
+    width: 100%;
 }
