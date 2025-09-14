@@ -1,4 +1,4 @@
-<header class="header" [class.scrolled]="isScrolled && !sidenavMenu">
+<header class="header" [class.scrolled]="isScrolled && !sidenavMenu" [ngClass]="{ 'header-transparent': sidenavMenu }">
     <div class="header-container">
         <div class="logo-container">
             <button class="d-mobile d-flex" matIconButton (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button>

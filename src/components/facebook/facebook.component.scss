@@ -1,0 +1,52 @@
+:host {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    z-index: 1100;
+}
+
+.fb-fab {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+    background-color: #222;
+    box-shadow:
+        0 1px 0 rgba(34, 34, 34, 0.12),
+        0 8px 24px rgba(34, 34, 34, 0.18),
+        inset 0 0 0 2px rgba(212, 175, 55, 0.5);
+    transition:
+        transform 200ms ease,
+        box-shadow 200ms ease,
+        background 200ms ease,
+        color 200ms ease;
+    cursor: pointer;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow:
+            0 2px 0 rgba(34, 34, 34, 0.16),
+            0 16px 40px rgba(34, 34, 34, 0.26),
+            inset 0 0 0 2px rgba(212, 175, 55, 0.75);
+        color: rgb(255, 215, 96);
+    }
+}
+
+@media (max-width: 767px) {
+    :host {
+        right: 12px;
+        bottom: 16px;
+    }
+    .fb-fab {
+        width: 52px;
+        height: 52px;
+    }
+}

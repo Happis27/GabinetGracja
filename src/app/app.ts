@@ -5,10 +5,19 @@ import { HeaderComponent } from '../components/header/header.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatRippleModule } from '@angular/material/core';
 import { FooterComponent } from '../components/footer/footer.component';
+import { FacebookWidgetComponent } from '../components/facebook/facebook.component';
 
 @Component({
     selector: 'app-root',
-    imports: [CommonModule, MatRippleModule, RouterModule, HeaderComponent, MatSidenavModule, FooterComponent],
+    imports: [
+        CommonModule,
+        MatRippleModule,
+        RouterModule,
+        HeaderComponent,
+        MatSidenavModule,
+        FooterComponent,
+        FacebookWidgetComponent,
+    ],
     templateUrl: './app.html',
     styleUrl: './app.scss',
 })

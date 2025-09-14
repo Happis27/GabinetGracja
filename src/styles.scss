@@ -388,3 +388,55 @@ a.app-button {
     max-width: 900px;
     width: 100%;
 }
+
+// ...existing code...
+
+:root {
+    // ...existing code...
+    --scrollbar-size: 10px;
+    --scrollbar-radius: 10px;
+    --scrollbar-bg: #ffffff; // track
+    --scrollbar-thumb: var(--color-primary); // golden thumb
+    --scrollbar-thumb-hover: rgb(230, 195, 70);
+    --scrollbar-thumb-active: rgb(206, 169, 49);
+}
+
+/* Firefox */
+* {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+    scrollbar-width: thin;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+*::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: var(--scrollbar-radius);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-radius);
+    border: 2px solid var(--scrollbar-bg);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-active);
+}
+
+*::-webkit-scrollbar-corner {
+    background: var(--scrollbar-bg);
+}
+
+// Optional: smoother scroll in iOS overflow areas
+.menu-content {
+    -webkit-overflow-scrolling: touch;
+}

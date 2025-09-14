@@ -8,7 +8,7 @@
         (closedStart)="this.isSidenavOpened = false">
         <div class="sidenav-menu">
             <app-header
-                class="app-navbar"
+                class="sidenav-app-navbar"
                 [ngClass]="{ 'toolbar-sidenav-open': isSidenavOpened }"
                 [sidenavMenu]="true"
                 (sidenavToggleEvent)="sidenav.toggle()">
@@ -119,5 +119,6 @@
                 </main>
             </div>
         </div>
+        <app-facebook-widget></app-facebook-widget>
     </mat-sidenav-content>
 </mat-sidenav-container>
