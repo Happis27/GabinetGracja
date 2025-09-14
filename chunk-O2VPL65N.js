@@ -1,1 +1,0 @@
-import{Bb as c,Cb as n,Ub as o,eb as t}from"./chunk-7OQCTBWR.js";var r=class a{static \u0275fac=function(e){return new(e||a)};static \u0275cmp=t({type:a,selectors:[["app-face-care"]],decls:2,vars:0,template:function(e,i){e&1&&(c(0,"p"),o(1,"face-care works!"),n())},encapsulation:2})};export{r as FaceCare};

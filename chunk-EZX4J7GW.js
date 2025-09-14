@@ -1,1 +1,0 @@
-import{Bb as i,Cb as a,Ub as n,eb as o}from"./chunk-7OQCTBWR.js";var r=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-podiatry"]],decls:2,vars:0,template:function(e,s){e&1&&(i(0,"p"),n(1,"podiatry works!"),a())},encapsulation:2})};export{r as Podiatry};
